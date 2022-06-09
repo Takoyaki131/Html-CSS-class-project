@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Trust the Process</title>
+    <script type="text/javascript" src="../scripts/dropdown.js"></script>
+    <script type="text/javascript" src="../scripts/donate.js"></script>
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="../assets/ttp.jpg" alt="">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="displayDrop()">About the Process
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="players.html">Current Players</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+
+    <div class="container">
+      <h1>Donate Here</h1>
+      <form name="donationForm" action="done.html" method="post" onsubmit="return checkForm()">
+        <fieldset>
+          <legend>Select Donation Amount</legend>
+
+        <table class="formTable">
+           <tr>
+              <td class="labelcell">Product<span style="color: red">*</span></td>
+              <td class="inputcell">
+              <select name="amount" id="amount">
+                 <option value="0"> Select a Donation Amount </option>
+                 <option value="5.00"> $5.00 </option>
+                 <option value="10.00"> $10.00 </option>
+                 <option value="15.00"> $15.00 </option>
+                 <option value="25.00"> $25.00 </option>
+                 <option value="50"> $50.00 </option>
+                 <option value="100.0"> $100.00 </option>
+              </select>
+           </tr>
+           <tr>
+             <td class="labelcell">Send a custom Message</td>
+             <td class="inputcell">
+               <textarea id="w3review" name="w3review" rows="4" cols="50">Send a custom message here!
+                </textarea>
+             </td>
+           </tr>
+           <tr>
+              <td colspan="2"><span style="color: red">*</span> Required Field</td>
+           </tr>
+        </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Enter Contact Information </legend>
+          <table class="formTable">
+            <tr>
+               <td class="labelcell">First Name<span style="color: red">*</span></td>
+               <td class="inputcell">
+                  <input class="text" name="fname" id="fname" size="25" />
+               </td>
+            </tr>
+            <tr>
+               <td class="labelcell">Last Name<span style="color: red">*</span></td>
+               <td class="inputcell">
+                  <input class="text" name="lname" id="lname" size="25" />
+               </td>
+            </tr>
+            <tr>
+               <td class="labelcell">City<span style="color: red">*</span></td>
+               <td class="inputcell">
+                  <input class="text" name="city" id="city" size="25" />
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2"><span style="color: red">*</span> Required Field</td>
+            </tr>
+         </table>
+        </fieldset>
+        <p id="formbuttons">
+          <input type="submit" value="Submit">
+        </p>
+      </form>
+
+    </div>
+  </body>
+</html>

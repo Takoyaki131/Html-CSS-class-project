@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Trust the Process</title>
+    <script type="text/javascript" src="../scripts/dropdown.js"></script>
+    <script type="text/javascript">
+      setTimeout( function()
+      {
+         location.href = "index.html";
+      }, 8000);
+   </script>
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="../assets/ttp.jpg" alt="">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="displayDrop()">About the Process
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="importantPeople.html">Important People</a>
+          <a href="history.html">History of the Process</a>
+        </div>
+      </div>
+      <a href="players.html">Current Players</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+
+    <div class="container">
+      <h1>Thank you for your donation!</h1>
+      <p>You will be redirected to the home page shortly</p>
+    </div>
+  </body>
+</html>
